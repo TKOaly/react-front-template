@@ -1,0 +1,11 @@
+{
+  "watch": [
+    "src",
+    "public/styles"
+  ],
+  "ext": "*",
+  "ignore": [
+    "src/**/*.spec.ts"
+  ],
+  "exec": "yarn styles && webpack --env.platform=server --mode=development && webpack --env.platform=web --mode=development && node ./dist/js/server.js"
+}
