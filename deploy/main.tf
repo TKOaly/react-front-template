@@ -168,7 +168,7 @@ resource "aws_ecs_task_definition" "demo_service_task" {
       }
     },
     "environment": [
-      {"name": "PORT", "valueFrom": "5050"}
+      {"name": "PORT", "value": "5050"}
     ]
   }
 ]
