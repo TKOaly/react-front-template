@@ -29,4 +29,6 @@ server.get(
       .then(t => res.json(t))
 )
 
+server.get('/health', (_, res) => res.json({ status: 'ok' }))
+
 server.listen(PORT, () => console.log('🍺 Listening on port', PORT))

@@ -11,6 +11,6 @@ COPY tsconfig.json /app/
 
 RUN yarn install
 
-EXPOSE 3000
+EXPOSE 5050
 
 CMD ["yarn", "start"]
